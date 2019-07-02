@@ -91,7 +91,7 @@ router.delete('/:id', (req, res) => {
     Blog
         .findByIdAndRemove(req.params.id)
         .then(blog => {
-            if (blogs) res.status(200).json(blogs);
+            if (blog) res.status(200).json(blog);
         });
 });
 
